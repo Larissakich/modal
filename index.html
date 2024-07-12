@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CDN Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <title>Modal</title>
+</head>
+<body>
+    <!-- Botão parar abrir o modal -->
+    <button class="open-modal" data-modal="modal-1">
+        Open Modal
+    </button>
+
+    <!-- Modal -->
+    <dialog id="modal-1">
+        <form>
+            <!-- Cabeçalho do modal -->
+            <div class="modal-header">
+                <!-- Título do modal -->
+                <h1 class="modal-title">
+                    Sign in to our plataform
+                </h1>
+
+                <!-- Botão para fechar o modal -->
+                <button class="close-modal" type="button" data-modal="modal">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+    
+            <!-- Corpo do modal -->
+            <div class="modal-body">
+                <!-- Campo de e-mail -->
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="name@example.com"
+                    >
+                </div>
+    
+                <!-- Campo de senha -->
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input 
+                        type="password" 
+                        id="password"
+                        name="password"
+                        placeholder="•••••••"
+                    >
+                </div>
+
+                <!-- Opções de senha -->
+                <div class="password-options">
+                    <div class="remember-password">
+                        <input 
+                            type="checkbox" 
+                            id="remember_password" 
+                            name="remember_password"
+                        >
+                        <label for="remember_password">Remember me</label>
+                    </div>
+
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+
+                <!-- Botão de login -->
+                <button id="login_button">
+                    Login to your account
+                </button>
+
+                <!-- Botão de registro -->
+                <div class="register">
+                    <span>Not registered?</span>
+                    <a href="#">Login here</a>
+                </div>
+            </div>
+        </form>
+    </dialog>
+
+    <!-- JavaScript -->
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+/* Link do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset CSS */
+*:not(dialog) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #6366F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Botão de abrir modal */
+.open-modal {
+    background-color: #FFFFFF;
+    color: #6366F1;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Fundo do modal */
+dialog::backdrop {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+/* Modal */
+dialog {
+    border: none;
+    width: 350px;
+    border-radius: 24px;
+    padding: 18px;
+}
+
+/* Cabeçalho do modal */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+/* Título do modal */
+.modal-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #111928;
+}
+
+/* Botão de fechar modal */
+.close-modal {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #9CA3AF;
+    font-size: 18px;
+}
+
+/* Corpo do modal */
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Input do formulário */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+/* Label do input */
+.input-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111928;
+}
+
+/* Input */
+.input-group input {
+    border: 1px solid #D1D5DB;
+    background-color: #F9FAFB;
+    border-radius: 8px;
+    padding: 10px 16px;
+}
+
+/* Input com foco */
+.input-group input:focus {
+    outline: 1px solid #6366f1;
+}
+
+/* Opções de senha */
+.password-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Checkbox de lembrar senha */
+.remember-password {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    color: #111928;
+}
+
+/* Link de esqueci a senha */
+.forgot-password {
+    font-size: 12px;
+    color: #1C64F2;
+    text-decoration: none;
+}
+
+/* Botão de login */
+#login_button {
+    background-color: #6366F1;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Rodapé do modal */
+.register span {
+    font-size: 14px;
+    color: #6B7280;
+}
+
+/* Link de registrar */
+.register a {
+    font-size: 14px;
+    color: #1C64F2;
+    text-decoration: none;
+}
